@@ -3,7 +3,7 @@
 justify-content: center; 
 
  } */
-
+/* 
 .Weather > form {
 height: 100% ; 
 }
@@ -23,10 +23,43 @@ height: 100% ;
   border: 1px solid;
   margin: 0;
   border-radius: 0 0.5rem 0.5rem 0;
-  background-color: #333;
+  background-color: red;
   color: #eee;
 }
 
 .Weather > form > select {
   margin:  1 rem 0;
+} */
+
+.Weather > form {
+  height: 100%;
+}
+
+.Weather > form > .input-container {
+  display: flex; /* Ensures the input and button are in a row */
+  align-items: center; /* Aligns the input and button vertically */
+}
+
+.Weather > form > .input-container > input {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid;
+  margin: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+  width: 200px; /* Optional: Ensures the input is a good size */
+}
+
+.Weather > form > .input-container > button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid;
+  margin: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #1f5ea1;
+  color: #eee;
+  cursor: pointer; /* Ensure button looks clickable */
+}
+
+.Weather > form > select {
+  margin: 1rem 0;
 }
